@@ -11,8 +11,11 @@ fx:controller="com.example.javafxproject.HelloController">
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label text="..." fx:id="lblMensagem"/>
-    <Button text="Ver mensagem" onAction="#onClickBtnVerMensagem"/>
+    <Label text="Meu Primeiro Programa JavaFX" />
+
+    <Label text="..." fx:id="lblMensagem" />
+    
+    <Button text="Ver mensagem" onAction="#onClickBtnVerMensagem" />
 </VBox>
 
 
