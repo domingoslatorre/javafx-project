@@ -1,5 +1,8 @@
 package com.example.javafxproject;
 
+import com.example.javafxproject.cliente.Cliente;
+import com.example.javafxproject.cliente.ClienteDao;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.TextField;
@@ -24,6 +27,15 @@ public class CadastroClienteController {
         System.out.println(email);
         System.out.println(telefone);
         System.out.println(aceitaPromocao);
+
+        ClienteDao clienteDao = new ClienteDao();
+        Cliente cliente = clienteDao.cadastrar(nome, email, telefone, aceitaPromocao);
+
+        System.out.println(cliente.getId());
+        System.out.println(cliente.getNome());
+        System.out.println(cliente.getEmail());
+        System.out.println(cliente.getTelefone());
+        System.out.println(cliente.getAceitaPromocao());
     }
     
 }
